@@ -3,6 +3,6 @@
  * we can make sure the local environment variables are loaded before all the modules
  */
 
-import dotenv from 'dotenv'
+import * as dotenv from 'dotenv'
 
 dotenv.config()

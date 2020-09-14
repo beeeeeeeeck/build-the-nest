@@ -4,7 +4,7 @@ module.exports = {
         project: 'tsconfig.json',
         sourceType: 'module',
     },
-    plugins: ['@typescript-eslint/eslint-plugin', 'import'],
+    plugins: ['@typescript-eslint/eslint-plugin'],
     extends: [
         'plugin:@typescript-eslint/eslint-recommended',
         'plugin:@typescript-eslint/recommended',
@@ -17,11 +17,27 @@ module.exports = {
         jest: true,
     },
     rules: {
+        // eslint base rules
+        "eqeqeq": [
+            "error",
+            "smart"
+        ],
         "no-unused-vars": "off",
         "semi": "off",
         "max-len": ["error", {
             "code": 120
         }],
+        "indent": ["error", 4],
+        "no-multi-assign": "warn",
+        "no-underscore-dangle": "off",
+        "no-console": "off",
+        "global-require": "warn",
+        "max-classes-per-file": ["error", 2],
+        "no-param-reassign": ["error", {
+            "props": false
+        }],
+        "curly": ["error", "all"],
+        "no-mixed-operators": "error",
 
         // typescript eslint rules
         '@typescript-eslint/interface-name-prefix': 'off',
