@@ -1,10 +1,9 @@
 {
   "name": "buildthenest",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
-  "private": true,
-  "license": "UNLICENSED",
+  "description": "Build the nest by nestjs",
+  "author": "Beck Lin <runbeck@163.com>",
+  "license": "MIT",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
